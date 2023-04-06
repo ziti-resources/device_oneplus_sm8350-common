@@ -199,4 +199,7 @@
          keyboard vibration will follow config_defaultHapticFeedbackIntensity -->
     <integer name="config_defaultKeyboardVibrationIntensity">3</integer>
 
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
 </resources>
