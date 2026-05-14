@@ -52,9 +52,6 @@ BOARD_USES_ALSA_AUDIO := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lahaina
 
-# Camera
-TARGET_CAMERA_SERVICE_EXT_LIB := //$(COMMON_PATH):libcameraservice_extension.ziti
-
 # Display
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 
