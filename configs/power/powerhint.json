@@ -587,79 +587,79 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampTAMin",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "30"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampFGMin",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "30"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampTALatency",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWMinFreq",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "12298"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHistMemory",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHystLength",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "LLCCBWMinFreq",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "6515"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUIdleTimer",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "10000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUForceRailOn",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUForceClkOn",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "1"
     },
     {
