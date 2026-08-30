@@ -1,0 +1,2 @@
+# WiFi
+config.disable_rtt=true
