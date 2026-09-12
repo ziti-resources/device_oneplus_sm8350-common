@@ -130,6 +130,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
     hardware/qcom-caf/sm8350/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
+PRODUCT_PACKAGES += \
+    LunarisDolby
+
+TARGET_INCLUDES_DolbyVision := true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
@@ -218,7 +226,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_lahaina.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_lahaina.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_v1.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_v1.xml
+    $(LOCAL_PATH)/configs/media/media_codecs_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_v1.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
 
 $(call soong_config_set_bool,stagefright,target_disable_thumbnail_block_model,true)
 
@@ -377,7 +386,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/oplus/vintf/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/vintf/manifest.xml
+DEVICE_MANIFEST_FILE += \
+    device/oneplus/sm8350-common/vintf/manifest.xml \
+    device/oneplus/sm8350-common/vintf/c2_manifest_vendor.xml
 ODM_MANIFEST_FILES := $(LOCAL_PATH)/vintf/manifest_odm.xml
 
 # WiFi
