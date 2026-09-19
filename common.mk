@@ -122,6 +122,7 @@ PRODUCT_COPY_FILES += \
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
 $(call soong_config_set,codec2,target_ships_dolby,true)
+TARGET_INCLUDES_DolbyVision := true
 
 PRODUCT_PACKAGES += \
     DolbyAtmos
