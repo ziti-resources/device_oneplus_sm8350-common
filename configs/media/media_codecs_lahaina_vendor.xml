@@ -103,8 +103,11 @@
 -->
 
 <MediaCodecs>
+    <Include href="media_codecs_google_audio.xml" />
+    <Include href="media_codecs_vendor_audio.xml" />
+    <Include href="media_codecs_google_telephony.xml" />
+    <Include href="media_codecs_c2_audio.xml" />
     <Settings>
-        <Domain name="telephony" enabled="true" />
         <Setting name="max-video-encoder-input-buffers" value="11" />
     </Settings>
     <Decoders>
@@ -279,6 +282,8 @@
             <Limit name="concurrent-instances" max="16" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
             <Feature name="intra-refresh" />
+            <Tuning name="vq-target-bpp-1920x1080" value="3.80" />
+            <Tuning name="vq-target-bpp-1280x720" value="4.50" />
             <Limit name="performance-point-1280x720" value="960" />
             <Limit name="performance-point-1920x1080" value="480" />
             <Limit name="performance-point-1920x1080" value="240" />
@@ -304,7 +309,7 @@
             <Limit name="performance-point-3840x2160" value="120" />
             <Limit name="performance-point-7680x4320" value="30" />
         </MediaCodec>
-        <MediaCodec name="c2.qti.hevc.encoder.cq" type="video/hevc">
+        <MediaCodec name="c2.qti.hevc.encoder.cq" type="video/hevc" rank="1024">
             <Alias name="OMX.qcom.video.encoder.hevc.cq"/>
             <Limit name="size" min="128x128" max="512x512" />
             <Limit name="alignment" value="2x2" />
@@ -320,7 +325,7 @@
         </MediaCodec>
         <MediaCodec name="c2.qti.heic.encoder" type="image/vnd.android.heic">
             <Alias name="OMX.qcom.video.encoder.heic"/>
-            <Limit name="size" min="512x512" max="16384x16384" />
+            <Limit name="size" min="512x512" max="8192x8192" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="64" max="3916800" />
@@ -334,4 +339,5 @@
             <Limit name="performance-point-1920x1080" value="6" />
         </MediaCodec>
     </Encoders>
+    <Include href="media_codecs_google_c2.xml" />
 </MediaCodecs>
