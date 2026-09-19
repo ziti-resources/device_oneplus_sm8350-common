@@ -375,6 +375,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += \
+    device/oneplus/sm8350-common/vintf/c2_manifest_vendor.xml \
     device/oneplus/sm8350-common/vintf/manifest.xml
 ODM_MANIFEST_FILES := $(LOCAL_PATH)/vintf/manifest_odm.xml
 
