@@ -123,6 +123,9 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, hardware/dolby/dolby.mk)
 $(call soong_config_set,codec2,target_ships_dolby,true)
 
+PRODUCT_PACKAGES += \
+    DolbyAtmos
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
