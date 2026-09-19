@@ -49,17 +49,10 @@ case "$target" in
     "lahaina")
         case "$soc_hwid" in
             475|515)
-                sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
-                if [ $sku_ver -eq 1 ]; then
-                    setprop vendor.media.target_variant "_yupik_v1"
-                else
-                    setprop vendor.media.target_variant "_yupik_v0"
+                setprop vendor.media.target_variant "_yupik_v1"
 
-                fi
                 setprop vendor.netflix.bsp_rev "Q7325-SPY-33758-1"
-
                 setprop ro.netflix.bsp_rev "Q7325-SPY-33758-1"
-
                 ;;
             450)
                 if [ $build_codename -le "13" ]; then
