@@ -338,6 +338,9 @@ $(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 
+# Torch control
+$(call soong_config_set,libcameraservice,ext_lib,//$(LOCAL_PATH)/camera:libcameraservice_extension.yupik)
+
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch-service.oplus
