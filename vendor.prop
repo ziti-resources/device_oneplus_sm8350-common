@@ -120,6 +120,7 @@ debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
+debug.sf.enable_adpf_cpu_hint=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
@@ -145,6 +146,12 @@ ro.netflix.bsp_rev=Q875-32408-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+
+# PowerHAL
+vendor.powerhal.disp.idle_support=false
+vendor.powerhal.interaction.min=50
+vendor.powerhal.interaction.max=200
+vendor.powerhal.interaction.offset=0
 
 # QTEE
 persist.vendor.qteeconnector.retrying_interval=30

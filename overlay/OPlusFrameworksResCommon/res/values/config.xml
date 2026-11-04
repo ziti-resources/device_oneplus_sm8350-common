@@ -204,4 +204,6 @@
 
     <!-- Mock Oplus LinearmotorVibratorService -->
     <bool name="config_mockOplusLinearmotorVibratorService">true</bool>
+
+    <integer name="config_powerInsightCurrentDivisor">-1</integer>
 </resources>
