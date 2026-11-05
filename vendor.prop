@@ -146,6 +146,12 @@ ro.netflix.bsp_rev=Q875-32408-1
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# PowerHAL
+vendor.powerhal.disp.idle_support=false
+vendor.powerhal.interaction.min=50
+vendor.powerhal.interaction.max=200
+vendor.powerhal.interaction.offset=0
+
 # QTEE
 persist.vendor.qteeconnector.retrying_interval=30
 persist.vendor.qteeconnector.retrying_timeout=2000
