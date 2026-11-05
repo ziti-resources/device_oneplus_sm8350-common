@@ -379,54 +379,6 @@
       "Value": "550000000"
     },
     {
-      "PowerHint": "LAUNCH",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 500,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBigClusterMinFreq",
-      "Duration": 500,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "UclampTAMin",
-      "Duration": 500,
-      "Value": "30"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "UclampFGMin",
-      "Duration": 500,
-      "Value": "30"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "UclampTALatency",
-      "Duration": 500,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "GPUIdleTimer",
-      "Duration": 500,
-      "Value": "10000"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "GPUForceRailOn",
-      "Duration": 500,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "GPUForceClkOn",
-      "Duration": 500,
-      "Value": "1"
-    },
-    {
       "PowerHint": "GAME",
       "Node": "AdpfGameProfile",
       "Duration": 0,
